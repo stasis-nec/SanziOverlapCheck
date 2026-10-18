@@ -21,6 +21,12 @@
 
 重叠明细（12 列：序号、权属单位/资产名称/资产编号/图斑面积 A 与 B、交集面积、重叠比例、备注）+ 组织汇总 + 处理说明；Excel 依赖无法加载时退回 CSV/TXT。
 
+## 配套工具
+
+`tools/` 目录：
+
+- `数字云图 X-user-token-header 提取.user.js` —— 在平台页面右下角加一个按钮，一键读取并复制当前登录的 `X-user-token-header`（不自动上传）。如果 Cookie 标记为 HttpOnly，脚本读不到，请按 F12 → Application → Cookies 手动查找。**token 相当于登录凭据，请妥善保管。**
+
 ## 安装
 
 1. 安装 Tampermonkey，在油猴中新建脚本，把 `三资云图重叠核查_通用版_v1.1.0.user.js` 内容全选替换进去，Ctrl+S 保存。
